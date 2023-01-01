@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <q-layout class="bg-black">
     <div class="row bg-black justify-center text-center q-pa-md">
       <div class="col-12 text-left">
         <div
@@ -17,12 +17,12 @@
                 class="text-grey-9"
                 icon="ios_share"
                 @click="abrirDialog()"
-              />
+              ></q-btn>
             </div>
             <div class="col-4 q-mt-md text-center">
               <div class="text-subtitle1 text-weight-bold">@opencod3</div>
             </div>
-            <div class="col-4 q-mt-md q-pr-md text-right">
+            <div class="col-4 q-mt-md text-center">
               <q-avatar size="44px">
                 <img src="../assets/LOGO_OPENCOD3.png" />
               </q-avatar>
@@ -51,8 +51,8 @@
       </div>
       <div class="col-12">
         <div class="text-caption text-grey-4 text-weight-mediumn">
-          Você pode colocar aqui a sua descrição entre outros detalhes que achar
-          interessante
+          Bem-vindos pessoal, sempre que pedirem links e indicações vou colocar
+          tudo aqui para vocês.
         </div>
       </div>
       <div class="col-12 q-pt-xl">
@@ -77,10 +77,10 @@
       </div>
     </div>
     <q-dialog v-model="dialog">
-      <q-card id="borda" full-width>
+      <q-card id="borda">
         <q-card-section class="row">
           <div class="text-subtitle1 q-pl-xl text-center">
-            Compartilhar Link
+            Compartilhamento de Links
           </div>
           <q-space />
           <q-btn icon="close" size="sm" flat round dense v-close-popup />
@@ -107,7 +107,7 @@
         </q-card-section>
       </q-card>
     </q-dialog>
-  </div>
+  </q-layout>
 </template>
 
 <script>
@@ -155,33 +155,38 @@ export default defineComponent({
       links: [
         {
           id: 1,
-          url: "https://www.instagram.com/opencod3/",
-          descricao: "GRUPO WHATSAPP",
+          url: "https://www.linkedin.com/in/aline-diogo-dev/",
+          descricao: "Conecte-se comigo pelo Linkedin LIH",
         },
         {
           id: 2,
-          url: "https://www.instagram.com/opencod3/",
-          descricao: "VISITE O MEU SITE",
+          url: "https://www.linkedin.com/in/aline-diogo-dev/",
+          descricao: "Conecte-se comigo pelo Linkedin NOMAR",
         },
         {
           id: 3,
-          url: "https://www.instagram.com/opencod3/",
-          descricao: "ENTRE NO MEU GRUPO DO TELEGRAM",
+          url: "https://github.com/LIhDi/vue-opencod3-linktree",
+          descricao: "Código GitHub Opencod3",
         },
         {
           id: 4,
-          url: "https://www.instagram.com/opencod3/",
-          descricao: "GRUPO WHATSAPP",
+          url: "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          descricao: "Curso de Lógica de Programação GRATUITO",
+        },
+        {
+          id: 7,
+          url: "https://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6",
+          descricao: "CURSO PYTHON GRATUITO",
         },
         {
           id: 5,
-          url: "https://www.instagram.com/opencod3/",
-          descricao: "VISITE O MEU SITE",
+          url: "https://www.unicarioca.edu.br/cursos/graduacao/ciencia-da-computacao",
+          descricao: "CURSO CIÊNCIA DA COMPUTAÇÃO",
         },
         {
           id: 6,
-          url: "https://www.instagram.com/opencod3/",
-          descricao: "ENTRE NO MEU GRUPO DO TELEGRAM",
+          url: "https://unicarioca.edu.br/cursos/graduacao/engenharia-da-computacao",
+          descricao: "CURSO ENGENHARIA DA COMPUTAÇÃO",
         },
       ],
     };
@@ -203,20 +208,19 @@ export default defineComponent({
 #borda {
   border-radius: 5px;
 }
-.q-btn--outline:before {
-  border-color: #5861a0;
-}
+
 .classA {
   display: none;
 }
+
 .classB {
   transition: background-color 100ms ease 0s, -webkit-transform 100ms ease 0s,
-    -webkit-backdrop-filter 100ms ease 0s;
+    -webkitdrop-filter 100ms ease 0s;
   z-index: 10;
   width: calc(100% - 24px);
   position: fixed;
   border: 1px solid rgb(235, 238, 241);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.5);
   border-radius: 45px;
   height: 72px;
   backdrop-filter: blur(10px);
