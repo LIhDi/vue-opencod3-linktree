@@ -5,7 +5,7 @@
         <div
           :class="{
             classA: scrollPosition <= 0,
-            classB: scrollPosition > 2,
+            classB: scrollPosition > 1,
           }"
         >
           <div class="row">
