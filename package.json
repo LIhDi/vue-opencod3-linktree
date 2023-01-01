@@ -1,7 +1,7 @@
 {
   "name": "opencod3-linktree",
   "version": "0.0.1",
-  "description": "Criando uma arvore de links para o opencode",
+  "description": "Opencod3 LinkTree",
   "productName": "OPENCOD3",
   "author": "LIhDi <alinecsdiogo@gmail.com>",
   "private": true,
