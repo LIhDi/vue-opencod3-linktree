@@ -160,7 +160,7 @@ export default defineComponent({
         },
         {
           id: 2,
-          url: "https://www.linkedin.com/in/aline-diogo-dev/",
+          url: "https://www.linkedin.com/in/ramon-mesquita-dev/",
           descricao: "Conecte-se comigo pelo Linkedin NOMAR",
         },
         {
